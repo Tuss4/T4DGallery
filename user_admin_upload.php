@@ -38,4 +38,5 @@
 			echo "<br /><a href='user_admin_upload_form.php?u=".$user."'>Upload another image?</a>";
 			}
 		mysql_close($connect);
+		}
 ?>
