@@ -2,10 +2,7 @@
 /*
 Tuss4 Gallery v1.0
 */
-$dbuser = ""; //set database user
-$dbpass = ""; //set database pass
-$dbname = ""; //set database name
-$connect = mysql_connect("localhost", $dbuser,$dbpass);
+$connect = mysql_connect("localhost", "tuss4_test","testdb");
 if (!$connect)
 	{
 	die('Could not connect: '.mysql_error());
@@ -14,5 +11,5 @@ else
 	{
 	echo "T4D Gallery <br /><br />";
 	}
-mysql_select_db($dbname,$connect);
+mysql_select_db("tuss4_gallery",$connect);
 ?>

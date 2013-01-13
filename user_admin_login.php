@@ -9,6 +9,7 @@ while($yeh = mysql_fetch_array($getit))
 		echo"Welcome back, ".$yeh[user]."! What's good?<br />";
 		$_SESSION['user'] = $yeh[user];
 		echo "<a href='user_admin_upload_form.php?u=".$yeh[user]."'>Upload an image?</a>";
+		echo "<a href='user_admin_create_project_form.php?user=".$yeh[user]."'>Create project?</a>";
 	}
 mysql_close($connect);
 ?>
