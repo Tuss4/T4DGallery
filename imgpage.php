@@ -3,6 +3,9 @@
 </head>
 <body>
 <?php
+/*
+Full size image view page. That includes the uploader name and an image description.
+*/
 if(file_exists("upload/".htmlspecialchars($_GET["img"])))
 	{
 	echo "<img src='upload/".htmlspecialchars($_GET["img"])."' />";

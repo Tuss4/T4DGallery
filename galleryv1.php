@@ -13,6 +13,11 @@ img:hover {
 </head>
 <body>
 <?php
+/*
+We're fetching all the images in our gallery and listing them below. 
+Using the css above we create tiny thumbnails that are responsive to screen size.
+The thumbnails then link to a full size image on the image page.
+*/
 require("sqlconnect.php");
 $imgnames = mysql_query("SELECT imageNAME FROM Images");
 while ($gal = mysql_fetch_array($imgnames))
